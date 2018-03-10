@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+   <p onclick="myFun()">My name is Muhammad Lahin Hussain</p>
+   <script defer>
+       if(navigator.serviceWorker) {
+           navigator.serviceWorker.register('service-worker.js').then(() => {
+               console.log('Service worker installed')
+           }), err => {
+               console.error('Service worker error ', err);
+           }
+       }
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>
